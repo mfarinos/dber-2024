@@ -1,0 +1,1004 @@
+
+
+
+
+
+
+// Mayor de cinco números: Solicita tres números y determina cuál es el mayor de ellos.
+// entrada num(leer)
+// proceso si num < a
+// escribir "el numero ingresado es menor"
+// SiNo
+// Escribir "el numero ingresado es mayor"
+// salida: mostrar respuesta
+
+
+
+Funcion Num_mayor
+// Definimos varibles
+	definir num1, num2, num3 Como Real
+// Se inicializa en cero a numero
+	num1=0; num2=0; num3=0
+// Muestra un mensaje para que se ingrese un valor	
+	Escribir "Bienvenido, por favor ingrese un numero"
+//El valor ingresado se lo asigna a num	
+	leer num1 
+	Escribir "ingrese un otro numero"
+	leer num2
+	Escribir "Ingrese otro numero por favor"
+	leer num3
+	// Condiciona
+	Si num1 > num2 Entonces
+		escribir "El numero ingresado es mayor"
+		si num2 > num1 Entonces
+			Escribir "El numero ingresado es mayor"
+		SiNo
+			Escribir" Num3 es mayor"
+			
+		FinSi
+		Escribir "El numero ingresado es mayor"
+	Fin Si
+FinFuncion
+// SEdad mínima para votar: Pregunta la edad del usuario y verifica si es elegible para votar (18 años o más).
+// entrada: leer(edad) // declarar e iniciar
+// Proceso: si edad > 18 Entonces
+// escribir "usted es mayor de edad"
+// SiNo
+// Escribir " Usted es menor de edad"
+// salida: Mostrar respuesta
+Funcion calculando_edad
+	// definimos variables
+	definir edad como entero
+	// Se inicializa en cero a numero
+	edad=0
+	// muestra un mensaje para que ingrese un valor 
+	Escribir "Bienvenido, por favor ingrese un numero"
+	// el valor ingresado se lo asigna a edad
+	Leer edad
+	// Condiciona si edad es mayor a 18
+	Si edad > 18 Entonces
+		Escribir "usyed ya puede votar"
+	SiNo
+		Escribir "Usted no puede votar"
+	Fin Si
+	
+FinFuncion
+
+// Pedir al usuario un número y mostrar si es par o impar.
+// declacar e iniciar
+// entrada: solicitar que el usuario ingrese un numero 
+// proceso: Si num2 <> 0 Entonces
+//Si num1 % num2 = 0 Entonces
+//Escribir num1, " es múltiplo de ", num2
+//Sino
+//Escribir num1, " no es múltiplo de ", num2
+//FinSi
+//Sino
+//Escribir "No se puede dividir por cero."
+
+Funcion  Multiplo_2
+    Definir num1, num2 Como Entero
+	
+    Escribir "Ingresa el primer número:"
+    Leer num1
+    Escribir "Ingresa el segundo número:"
+    Leer num2
+	
+    Si num2 <> 0 Entonces
+        Si num1 % num2 = 0 Entonces
+            Escribir num1, " es múltiplo de ", num2
+        Sino
+            Escribir num1, " no es múltiplo de ", num2
+        FinSi
+    Sino
+        Escribir "No se puede dividir por cero."
+    FinSi
+FinFuncion
+
+
+// Solicitar al usuario un número y mostrar si es positivo o negativo.
+Funcion Positivo_negativo
+	// declaramos variables
+	Definir num Como Real
+	Escribir "Bienvenido, por favor ingrese un numero"
+	leer num 
+	Si num < 0 Entonces
+		Escribir "Su numero ingresado es negativo"
+	SiNo
+		Escribir "Su numero ingresado es positivo"
+	Fin Si
+FinFuncion
+
+// Entrada
+//  declacar e iniciar; año como entero
+//  Solicitar al usuario que ingrese un año
+
+// Proceso
+//Si (año % 100 = 0) Entonces
+//Si (año % 400 = 0) Entonces
+//Escribir "El año ", año, " es bisiesto"
+//Sino
+//Escribir "El año ", año, " no es bisiesto"
+//FinSi
+//Sino
+//Escribir "El año ", año, " es bisiesto"
+//FinSi
+//Sino
+//Escribir "El año ", año, " no es bisiesto"
+//FinSi
+
+// Salida
+// Mostrar el resultado 
+Funcion Año_Bisiesto
+    Definir año Como Entero
+	
+    Escribir "Ingresa un año:"
+    Leer año
+	
+    Si (año % 4 = 0) Entonces
+        Si (año % 100 = 0) Entonces
+            Si (año % 400 = 0) Entonces
+                Escribir "El año ", año, " es bisiesto"
+            Sino
+                Escribir "El año ", año, " no es bisiesto"
+            FinSi
+        Sino
+            Escribir "El año ", año, " es bisiesto"
+        FinSi
+    Sino
+        Escribir "El año ", año, " no es bisiesto"
+    FinSi
+FinFuncion
+
+// Pide al usuario que ingrese su mes y día de nacimiento, luego determina su signo zodiacal. 
+// Puedes usar una serie de declaraciones if para comparar las fechas ingresadas con las fechas límite de cada signo zodiacal.
+
+// Entrada
+// declacar e iniciar; Dia y mes como entero
+// Solicitar al usuario que ingrese el día y mes de nacimiento
+
+// Proceso
+//    Si mes = 1 y dia >= 20 O mes = 2 y dia <= 18 Entonces
+//        Escribir "Acuario"
+//    Sino, si mes = 2 y dia >= 19 O mes = 3 y dia <= 20 Entonces
+//        Escribir "Piscis"
+//    Sino, si mes = 3 y dia >= 21 O mes = 4 y dia <= 19 Entonces
+//        Escribir "Aries"
+//    Continuar con los demás signos zodiacales de manera similar
+// Salida
+// 7. Mostrar el signo zodiacal correspondiente
+
+Funcion Signo_zodiacal
+    Definir dia Como Entero
+    Definir mes Como Entero
+	
+    Escribir "Ingresa tu día de nacimiento:"
+    Leer dia
+    Escribir "Ingresa tu mes de nacimiento (número):"
+    Leer mes
+	
+    Si (mes = 1 Y dia >= 20) O (mes = 2 Y dia <= 18) Entonces
+        Escribir "Tu signo zodiacal es Acuario"
+    Sino
+        Si (mes = 2 Y dia >= 19) O (mes = 3 Y dia <= 20) Entonces
+            Escribir "Tu signo zodiacal es Piscis"
+        Sino
+            Si (mes = 3 Y dia >= 21) O (mes = 4 Y dia <= 19) Entonces
+                Escribir "Tu signo zodiacal es Aries"
+            Sino
+                Si (mes = 4 Y dia >= 20) O (mes = 5 Y dia <= 20) Entonces
+                    Escribir "Tu signo zodiacal es Tauro"
+                Sino
+                    Si (mes = 5 Y dia >= 21) O (mes = 6 Y dia <= 20) Entonces
+                        Escribir "Tu signo zodiacal es Géminis"
+                    Sino
+                        Si (mes = 6 Y dia >= 21) O (mes = 7 Y dia <= 22) Entonces
+                            Escribir "Tu signo zodiacal es Cáncer"
+                        Sino
+                            Si (mes = 7 Y dia >= 23) O (mes = 8 Y dia <= 22) Entonces
+                                Escribir "Tu signo zodiacal es Leo"
+                            Sino
+                                Si (mes = 8 Y dia >= 23) O (mes = 9 Y dia <= 22) Entonces
+                                    Escribir "Tu signo zodiacal es Virgo"
+                                Sino
+                                    Si (mes = 9 Y dia >= 23) O (mes = 10 Y dia <= 22) Entonces
+                                        Escribir "Tu signo zodiacal es Libra"
+                                    Sino
+                                        Si (mes = 10 Y dia >= 23) O (mes = 11 Y dia <= 21) Entonces
+                                            Escribir "Tu signo zodiacal es Escorpio"
+                                        Sino
+                                            Si (mes = 11 Y dia >= 22) O (mes = 12 Y dia <= 21) Entonces
+                                                Escribir "Tu signo zodiacal es Sagitario"
+                                            Sino
+                                                Si (mes = 12 Y dia >= 22) O (mes = 1 Y dia <= 19) Entonces
+                                                    Escribir "Tu signo zodiacal es Capricornio"
+                                                FinSi
+                                            FinSi
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                    FinSi
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinFuncion
+
+// Solicita al usuario que ingrese un número de día del mes 
+// (por ejemplo, del 1 al 31) y verifica si ese día pertenece a la primera quincena (días 1-15)  
+// o a la segunda quincena (días 16-31).
+
+// Entrada
+// 1. Definir la variable: dia como entero
+// 2. Solicitar al usuario que ingrese un día del mes (1-31)
+
+// Proceso
+//  Verificar si el día está en el rango de 1 a 15:
+//  Si dia >= 1 Y dia <= 15 Entonces
+//    Escribir "El día pertenece a la primera quincena."
+//   Sino
+//   Si dia >= 16 Y dia <= 31 Entonces
+//    Escribir "El día pertenece a la segunda quincena."
+//    Sino
+//    Escribir "El número ingresado no es un día válido."
+
+// Salida
+// Mostrar la respuesta
+
+Funcion  Quincena
+    Definir dia Como Entero
+	
+    Escribir "Ingresa un día del mes (1-31):"
+    Leer dia
+	
+    Si dia >= 1 Y dia <= 15 Entonces
+        Escribir "El día ", dia, " pertenece a la primera quincena."
+    Sino
+        Si dia >= 16 Y dia <= 31 Entonces
+            Escribir "El día ", dia, " pertenece a la segunda quincena."
+        Sino
+            Escribir "El número ingresado no es un día válido."
+        FinSi
+    FinSi
+FinFuncion
+
+// Día de la semana :Pide al usuario que ingrese un número del 1 al 7, donde 1 representa el domingo, 2 el lunes, 3 el martes, y así sucesivamente.
+//mostrar el nombre del día de la semana correspondiente al número ingresado.
+// Entrada
+// declacar e iniciar; dia como entero
+// 2. Solicitar al usuario que ingrese un número del 1 al 7
+
+// Proceso
+// Verificar el valor de dia:
+//   Si dia = 1 Entonces
+//    Escribir "Domingo"
+//    Sino, si dia = 2 Entonces
+//    Escribir "Lunes"
+//    Sino, si dia = 3 Entonces
+//    Escribir "Martes"
+//    Sino
+//    si dia = 4 Entonces
+//    Escribir "Miércoles"
+//    Sino
+//    si dia = 5 Entonces
+//    Escribir "Jueves"
+//    Sino
+//    si dia = 6 Entonces
+//    Escribir "Viernes"
+//    Sino
+//    si dia = 7 Entonces
+//    escribir "Sábado"
+//    Sino
+//    Escribir "Número inválido. Debe estar entre 1 y 7."
+
+// Salida
+// Mostrar la respuesta
+
+Funcion  Dia_de_la_semana 
+    Definir dia Como Entero
+	
+    Escribir "Ingresa un número del 1 al 7 (1 = Domingo, 2 = Lunes, ...):"
+    Leer dia
+	
+    Si dia = 1 Entonces
+        Escribir "Domingo"
+    Sino
+        Si dia = 2 Entonces
+            Escribir "Lunes"
+        Sino
+            Si dia = 3 Entonces
+                Escribir "Martes"
+            Sino
+                Si dia = 4 Entonces
+                    Escribir "Miércoles"
+                Sino
+                    Si dia = 5 Entonces
+                        Escribir "Jueves"
+                    Sino
+                        Si dia = 6 Entonces
+                            Escribir "Viernes"
+                        Sino
+                            Si dia = 7 Entonces
+                                Escribir "Sábado"
+                            Sino
+                                Escribir "Número inválido. Debe estar entre 1 y 7."
+                            FinSi
+                        FinSi
+                    FinSi
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinFuncion
+
+
+// Calculadora de precio con descuento: Crea un programa que permita a un usuario ingresar el precio de un artículo y un porcentaje de descuento.
+// El programa debe calcular y mostrar el precio final después del descuento aplicando el 15% del IVA
+// Entrada
+// Declarar e iniciar
+//   precio: Precio del artículo
+//   descuento: Porcentaje de descuento
+//   precioFinal: Precio final después del descuento e IVA
+//   iva: Monto del IVA
+//  Solicitar al usuario que ingrese el precio del artículo
+//  Solicitar al usuario que ingrese el porcentaje de descuento
+
+// Proceso
+// Calcular el precio después del descuento:
+//  precioFinal = precio - (precio * (descuento / 100))
+//  Calcular el IVA (15%):
+//  iva = precioFinal * 0.15
+// Calcular el precio final con IVA:
+//  precioFinal = precioFinal + iva
+
+// Salida
+// Mostrar la respuesta
+
+Funcion  Calculadora_precio_descuesto
+    Definir precio, descuento, precioFinal, iva Como Real
+	
+    Escribir "Ingresa el precio del artículo:"
+    Leer precio
+    Escribir "Ingresa el porcentaje de descuento:"
+    Leer descuento
+	
+    // Calcular el precio después del descuento
+    precioFinal = precio - (precio * (descuento / 100))
+    
+    // Calcular el IVA
+    iva = precioFinal * 0.15
+	
+    // Calcular el precio final con IVA
+    precioFinal = precioFinal + iva
+	
+    Escribir "El precio final después del descuento y con IVA es: ", precioFinal
+FinFuncion
+
+// Calculadora de sueldo con aumento: Pide al usuario que ingrese su salario actual y el porcentaje de aumento que recibirá. 
+//Calcula y muestra el nuevo salario después del aumento
+// Entrada
+// Declarar e iniciar
+//  salarioActual: Salario actual del usuario
+//  porcentajeAumento: Porcentaje de aumento que recibirá
+//  nuevoSalario: Nuevo salario después del aumento
+//  Solicitar al usuario que ingrese su salario actual
+//  Solicitar al usuario que ingrese el porcentaje de aumento
+
+// Proceso
+// Calcular el nuevo salario:
+// nuevoSalario = salarioActual + (salarioActual * (porcentajeAumento / 100))
+
+// Salida
+// Mostrar el nuevo salario después del aumento
+
+Funcion Calculadora_sueldo_Aumento
+    Definir salarioActual, porcentajeAumento, nuevoSalario Como Real
+	
+    // Entrada
+    Escribir "Ingresa tu salario actual:"
+    Leer salarioActual
+    Escribir "Ingresa el porcentaje de aumento que recibirás:"
+    Leer porcentajeAumento
+	
+    // Calcular el nuevo salario
+    nuevoSalario = salarioActual + (salarioActual * (porcentajeAumento / 100))
+	
+    // Salida
+    Escribir "Tu nuevo salario después del aumento es: ", nuevoSalario
+FinFuncion
+
+// Calculadora de compra con múltiples artículos: Permite al usuario ingresar el precio y la cantidad de varios artículos que está comprando.
+// Calcula el total de la compra y aplica un descuento del 10% si el total es mayor a $100.
+// Entrada
+//  Declarar e iniciar
+//    precio: Precio del artículo
+//    cantidad: Cantidad del artículo
+//    totalCompra: Total acumulado de la compra
+//    descuento: Monto del descuento aplicado
+//    continuar: Variable para controlar el bucle
+//  Inicializar totalCompra a 0
+
+// Proceso
+// Repetir mientras el usuario desee ingresar artículos:
+//   Solicitar el precio del artículo
+//   Solicitar la cantidad del artículo
+//   Calcular y acumular el total del artículo en totalCompra
+//   Preguntar si desea ingresar otro artículo (s/n)
+
+//  Si totalCompra > 100 Entonces
+//    Calcular el descuento como el 10% de totalCompra
+//    Restar el descuento a totalCompra
+
+// Salida
+//  Mostrar el total de la compra (con o sin descuento)
+
+Funcion  Calculadora_Compra
+    Definir precio, cantidad, totalCompra, descuento Como Real
+    Definir continuar Como Caracter
+	
+    totalCompra = 0
+	
+    // Entrada de artículos
+    Repetir
+        Escribir "Ingresa el precio del artículo:"
+        Leer precio
+        Escribir "Ingresa la cantidad del artículo:"
+        Leer cantidad
+		
+        // Calcular el total para el artículo actual
+        totalCompra = totalCompra + (precio * cantidad)
+		
+        // Preguntar si desea continuar ingresando artículos
+        Escribir "¿Desea ingresar otro artículo? (s/n):"
+        Leer continuar
+    Hasta Que continuar = "n"
+	
+    // Proceso: Aplicar descuento si corresponde
+    Si totalCompra > 100 Entonces
+        descuento = totalCompra * 0.10
+        totalCompra = totalCompra - descuento
+    FinSi
+	
+    // Salida
+    Escribir "El total de la compra es: ", totalCompra
+FinFuncion
+
+// Calculadora de impuestos sobre el salario: 
+// Solicita al usuario que ingrese su salario anual y calcula el impuesto sobre la renta según las siguientes tasas: 
+// Hasta $10,000: 5% De $10,001 a $20,000: 10%; más de $20,000: 15%
+// Entrada
+//  Declarar e iniciar
+//    salarioAnual: Salario anual del usuario
+//    impuesto: Monto del impuesto a pagar
+//    Solicitar al usuario que ingrese su salario anual
+
+// Proceso
+//   Si salarioAnual <= 10000 Entonces
+//    impuesto = salarioAnual * 0.05
+//  Sino
+//    Si salarioAnual <= 20000 Entonces
+//    impuesto = salarioAnual * 0.10
+//    Sino
+//    impuesto = salarioAnual * 0.15
+
+// Salida
+// Mostrar el impuesto sobre la renta a pagar
+
+Funcion  Calculadora_Impuestos_Sobre_Salario
+    Definir salarioAnual, impuesto Como Real
+	
+    // Entrada
+    Escribir "Ingresa tu salario anual:"
+    Leer salarioAnual
+	
+    // Proceso: Calcular el impuesto según las tasas
+    Si salarioAnual <= 10000 Entonces
+        impuesto = salarioAnual * 0.05
+    Sino
+        Si salarioAnual <= 20000 Entonces
+            impuesto = salarioAnual * 0.10
+        Sino
+            impuesto = salarioAnual * 0.15
+        FinSi
+    FinSi
+	
+    // Salida
+    Escribir "El impuesto sobre la renta a pagar es: ", impuesto
+FinFuncion
+
+
+// Pregunta al usuario cuántos años ha estado trabajando en una empresa y calcula su bono de antigüedad.
+// Si ha trabajado más de 5 años, otorga un bono del 5% sobre su salario
+// Entrada
+//  Declarar e iniciar
+//    añosTrabajados: Años que el usuario ha trabajado en la empresa
+//    salario: Salario del usuario
+//    bono: Monto del bono de antigüedad
+//  Solicitar al usuario que ingrese sus años de trabajo
+//  Solicitar al usuario que ingrese su salario
+
+// Proceso
+//  Si añosTrabajados > 5 Entonces
+//    bono = salario * 0.05
+//  Sino
+//    bono = 0
+
+// Salida
+//  Mostrar el bono de antigüedad
+
+
+Funcion  Calcular_Bono_antiguedad
+    Definir añostrabajados Como Entero
+    Definir salario, bono Como Real
+	
+    // Entrada
+    Escribir "Ingresa cuántos años has trabajado en la empresa:"
+    Leer añosTrabajados
+    Escribir "Ingresa tu salario:"
+    Leer salario
+	
+    // Proceso: Calcular el bono de antigüedad
+    Si añosTrabajados > 5 Entonces
+        bono = salario * 0.05
+    Sino
+        bono = 0
+    FinSi
+	
+    // Salida
+    Escribir "Tu bono de antigüedad es: ", bono
+FinFuncion
+
+// Crea un programa que permita al usuario ingresar la distancia de envío y calcule el costo del envío.
+// Si la distancia es inferior a 50 km, el costo es de $10. Si la distancia es de 50 km o más, el costo es de $20.
+
+// Entrada
+//  Declarar e iniciar
+//    distancia: Distancia de envío en km
+//    costo: Costo del envío
+//  Solicitar al usuario que ingrese la distancia de envío
+
+// Proceso
+//  Si distancia < 50 Entonces
+//    costo = 10
+//  Sino
+//   costo = 20
+
+// Salida
+// Mostrar el costo del envío
+
+funcion Calculando_Costo_envio
+    Definir distancia Como Real
+    Definir costo Como Real
+	
+    // Entrada
+    Escribir "Ingresa la distancia de envío (en km):"
+    Leer distancia
+	
+    // Proceso: Calcular el costo de envío
+    Si distancia < 50 Entonces
+        costo = 10
+    Sino
+        costo = 20
+    FinSi
+	
+    // Salida
+    Escribir "El costo del envío es: $", costo
+FinFuncion
+
+
+// Pide al usuario que ingrese el total de sus compras mensuales durante un año. 
+// Si el total es superior a $500, aplica un descuento del 20%. Al final se debe aplicar el IVA del 15%.
+
+// Entrada
+//    Declarar e iniciar
+//    totalCompras: Acumulador de las compras mensuales
+//     descuento: Monto del descuento aplicado
+//     totalConDescuento: Total después de aplicar el descuento
+//     iva: Monto del IVA
+//     totalFinal: Total final a pagar
+//     totalMensual: Total de compras del mes actual
+//   Inicializar totalCompras a 0
+//   Para i desde 1 hasta 12 hacer:
+//    Solicitar el total de compras del mes i
+//    Acumular en totalCompras
+
+// Proceso
+//  Si totalCompras > 500 Entonces
+//    - Calcular descuento como el 20% de totalCompras
+//    - Calcular totalConDescuento restando el descuento a totalCompras
+//  Sino
+//    - totalConDescuento = totalCompras
+//  FinSi
+//  Calcular iva como el 15% de totalConDescuento
+//  Calcular totalFinal sumando totalConDescuento y iva
+
+// Salida
+//  Mostrar total de compras, total después del descuento, IVA, y total final
+
+Funcion  Calcular_compras_con_descuento_y_IVA
+    Definir totalCompras, descuento, totalConDescuento, iva, totalFinal, totalMensual Como Real
+    Definir i Como Entero
+	
+    totalCompras = 0
+	
+    // Entrada: Solicitar el total de compras mensuales
+    Para i Desde 1 Hasta 12 Hacer
+        Escribir "Ingresa el total de tus compras para el mes ", i, ":"
+        Leer totalMensual
+        totalCompras = totalCompras + totalMensual
+    FinPara
+	
+    // Proceso: Aplicar descuento si corresponde
+    Si totalCompras > 500 Entonces
+        descuento = totalCompras * 0.20
+        totalConDescuento = totalCompras - descuento
+    Sino
+        totalConDescuento = totalCompras
+    FinSi
+	
+    // Calcular el IVA (15%)
+    iva = totalConDescuento * 0.15
+	
+    // Calcular el total final
+    totalFinal = totalConDescuento + iva
+	
+    // Salida
+    Escribir "El total de tus compras es: $", totalCompras
+    Escribir "El total después del descuento es: $", totalConDescuento
+    Escribir "El IVA (15%) es: $", iva
+    Escribir "El total final a pagar es: $", totalFinal
+FinFuncion
+
+// Permite al usuario ingresar la cantidad de unidades de un producto que va a comprar y el precio unitario.
+// Aplica descuentos por volumen de compra según las siguientes reglas: 20-40 unidades: 
+// +15% de descuento 41-90 unidades: 20% de descuento Más de 90 unidades: 25% de descuento Al costo total debe aplicar el 15% de impuestos
+
+// Entrada
+//  Declarar e iniciar
+//    unidades: Cantidad de unidades compradas
+//    precioUnitario: Precio unitario del producto
+//    descuento: Monto del descuento aplicado
+//    costoTotal: Costo total antes de impuestos
+//    impuestos: Monto de impuestos
+//     costoFinal: Costo total final a pagar
+//  Solicitar al usuario que ingrese la cantidad de unidades
+//  Solicitar al usuario que ingrese el precio unitario
+
+// Proceso
+//  Calcular costoTotal = unidades * precioUnitario
+//  Aplicar descuentos según el rango de unidades:
+//   Si unidades entre 20 y 40 Entonces descuento = 15%
+//   Si unidades entre 41 y 90 Entonces descuento = 20%
+//   Si unidades > 90 Entonces descuento = 25%
+//   Si no, descuento = 0
+//  Calcular costoTotal = costoTotal - descuento
+//  Calcular impuestos = costoTotal * 0.15
+//  Calcular costoFinal = costoTotal + impuestos
+
+// Salida
+// 9. Mostrar costo total sin impuestos, descuento aplicado, impuestos y costo final
+
+Funcion  Calcular_Costo_Con_Descuento_E_Impuesto
+    Definir unidades Como Entero
+    Definir precioUnitario, descuento, costoTotal, impuestos, costoFinal Como Real
+	
+    // Entrada
+    Escribir "Ingresa la cantidad de unidades que vas a comprar:"
+    Leer unidades
+    Escribir "Ingresa el precio unitario del producto:"
+    Leer precioUnitario
+	
+    // Proceso: Calcular costo total antes de impuestos
+    costoTotal = unidades * precioUnitario
+	
+    // Aplicar descuentos por volumen
+    Si unidades >= 20 Y unidades <= 40 Entonces
+        descuento = costoTotal * 0.15
+    Sino
+        Si unidades >= 41 Y unidades <= 90 Entonces
+            descuento = costoTotal * 0.20
+        Sino
+            Si unidades > 90 Entonces
+                descuento = costoTotal * 0.25
+            Sino
+                descuento = 0
+            FinSi
+        FinSi
+    FinSi
+	
+    // Calcular costo total después de aplicar el descuento
+    costoTotal = costoTotal - descuento
+	
+    // Calcular impuestos (15%)
+    impuestos = costoTotal * 0.15
+	
+    // Calcular costo final
+    costoFinal = costoTotal + impuestos
+	
+    // Salida
+    Escribir "Costo total sin impuestos: $", costoTotal + descuento
+    Escribir "Descuento aplicado: $", descuento
+    Escribir "Impuestos (15%): $", impuestos
+    Escribir "Costo final a pagar: $", costoFinal
+FinFuncion
+
+// Pregunta al usuario cuántas horas de servicio necesita y calcula el costo total. Si las horas son más de 10, aplica un descuento del 20%.
+// Entrada
+//  Declarar e inicial
+//    horasServicio: Cantidad de horas de servicio
+//    costoPorHora: Costo por hora del servicio
+//    costoTotal: Costo total antes de descuento
+//    descuento: Monto del descuento aplicado
+//  Solicitar al usuario que ingrese las horas de servicio
+//  Solicitar al usuario que ingrese el costo por hora
+
+// Proceso
+// Calcular costoTotal = horasServicio * costoPorHora
+// Si horasServicio > 10 Entonces
+//  Calcular descuento como el 20% de costoTotal
+//  Restar descuento a costoTotal
+
+// Salida
+// Mostrar el costo total del servicio
+
+Funcion  Calculando_costo_Servicio
+    Definir horasServicio Como Entero
+    Definir costoPorHora, costoTotal, descuento Como Real
+	
+    // Entrada
+    Escribir "Ingresa cuántas horas de servicio necesitas:"
+    Leer horasServicio
+    Escribir "Ingresa el costo por hora del servicio:"
+    Leer costoPorHora
+	
+    // Proceso: Calcular costo total
+    costoTotal = horasServicio * costoPorHora
+	
+    // Aplicar descuento si las horas son más de 10
+    Si horasServicio > 10 Entonces
+        descuento = costoTotal * 0.20
+        costoTotal = costoTotal - descuento
+    FinSi
+	
+    // Salida
+    Escribir "El costo total del servicio es: $", costoTotal
+FinFuncion
+
+//  "XYZ" es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes: El costo de platillo por persona es de $95.00,
+// pero si el número de personas es mayor a 200 pero menor o igual a 300, el costo es de $85.00. Para más de 300 personas el costo por
+// platillo es de $75.00. Se requiere un algoritmo que ayude a determinar el presupuesto que se debe presentar a los clientes que deseen 
+//realizar un evento aplicando un descuento del 205% con un IVA final del 15%
+
+// Entrada
+// declarar e iniciar
+//    numeroPersonas: Cantidad de personas para el banquete
+//    costoPorPersona: Costo por persona según el número de personas
+//    totalAntesDescuento: Total antes de aplicar descuento
+//    totalConDescuento: Total después de aplicar descuento
+//    iva: Monto de IVA
+//    totalFinal: Total final a pagar
+//  Solicitar al usuario que ingrese el número de personas
+
+// Proceso
+//  Determinar costoPorPersona según el número de personas:
+//    Si entre 201 y 300 entonces costoPorPersona = 85
+//    Si > 300 entonces costoPorPersona = 75
+//    Si <= 200 entonces costoPorPersona = 95
+//  Calcular totalAntesDescuento = costoPorPersona * numeroPersonas
+//  Calcular totalConDescuento = totalAntesDescuento * 0.80
+//  Calcular iva = totalConDescuento * 0.15
+//  Calcular totalFinal = totalConDescuento + iva
+
+// Salida
+//  Mostrar el total antes del descuento, total con descuento, IVA y presupuesto final
+
+
+Funcion  Calculando_presupuesto_Banquete
+    Definir numeroPersonas Como Entero
+    Definir costoPorPersona, totalAntesDescuento, totalConDescuento, iva, totalFinal Como Real
+	
+    // Entrada
+    Escribir "Ingresa el número de personas para el banquete:"
+    Leer numeroPersonas
+	
+    // Proceso: Determinar costo por persona
+    Si numeroPersonas > 200 Y numeroPersonas <= 300 Entonces
+        costoPorPersona = 85.00
+    Sino
+        Si numeroPersonas > 300 Entonces
+            costoPorPersona = 75.00
+        Sino
+            costoPorPersona = 95.00
+        FinSi
+    FinSi
+	
+    // Calcular total antes del descuento
+    totalAntesDescuento = costoPorPersona * numeroPersonas
+	
+    // Calcular total con descuento (20%)
+    totalConDescuento = totalAntesDescuento * 0.80  // 80% del total
+	
+    // Calcular IVA (15%)
+    iva = totalConDescuento * 0.15
+	
+    // Calcular total final
+    totalFinal = totalConDescuento + iva
+	
+    // Salida
+    Escribir "El total antes del descuento es: $", totalAntesDescuento
+    Escribir "El total con descuento es: $", totalConDescuento
+    Escribir "El IVA (15%) es: $", iva
+    Escribir "El presupuesto final es: $", totalFinal
+FinFuncion
+
+
+// La asociación de vinicultores tiene como política fijar un precio inicial al kilo de uva, la cual se clasifica en tipos A y B, y además en tamaños 1 y 2. Cuando se realiza la venta del producto,
+// ésta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor por la uva que entrega en un embarque,
+// considerando lo siguiente: Si es de tipo A, se le cargan $20 al precio inicial cuando es de tamaño 1; y $30 si es de tamaño 2. 
+// Si es de tipo B, se rebajan $30 cuando es de tamaño 1, y 50 cuando es de tamaño 2. Realice un algoritmo para determinar la ganancia obtenida considerando un iva del 15%
+// Entrada
+//  declarar e iniciar
+//    precioInicial: Precio inicial por kilo de uva
+//    precioFinal: Precio final por kilo de uva
+//    iva: Monto del IVA (15%)
+//    ganancia: Ganancia total (incluyendo IVA)
+//    tipo: Tipo de uva (A o B)
+//    tamaño: Tamaño de uva (1 o 2)
+//  Solicitar al usuario que ingrese el precio inicial, tipo y tamaño
+
+// Proceso
+//  Determinar el precioFinal según el tipo y tamaño:
+//    Si tipo = "A":
+//    Si tamaño = 1, precioFinal = precioInicial + 20
+//    Si tamaño = 2, precioFinal = precioInicial + 30
+//    Si tipo = "B":
+//    Si tamaño = 1, precioFinal = precioInicial - 30
+//    Si tamaño = 2, precioFinal = precioInicial - 50
+//  Calcular ganancia = precioFinal * 1.15 (incluyendo IVA)
+
+// Salida
+// Mostrar precio final y ganancia total
+
+Funcion  CalcularGananciaUva
+    Definir precioInicial, precioFinal, iva, ganancia Como Real
+    Definir tipo Como Caracter
+    Definir tamaño Como Entero
+	
+    // Entrada
+    Escribir "Ingresa el precio inicial por kilo de uva:"
+    Leer precioInicial
+    Escribir "Ingresa el tipo de uva (A o B):"
+    Leer tipo
+    Escribir "Ingresa el tamaño de uva (1 o 2):"
+    Leer tamaño
+	
+    // Proceso: Calcular precio final según tipo y tamaño
+    Si tipo = "A" Entonces
+        Si tamaño = 1 Entonces
+            precioFinal = precioInicial + 20
+        Sino
+            precioFinal = precioInicial + 30
+        FinSi
+    Sino
+        Si tipo = "B" Entonces
+            Si tamaño = 1 Entonces
+                precioFinal = precioInicial - 30
+            Sino
+                precioFinal = precioInicial - 50
+            FinSi
+        FinSi
+    FinSi
+	
+    // Calcular ganancia y aplicar IVA
+    ganancia = precioFinal * 1.15  // Se aplica el IVA del 15%
+	
+    // Salida
+    Escribir "El precio final por kilo de uva es: $", precioFinal
+    Escribir "La ganancia total (incluyendo IVA) es: $", ganancia
+FinFuncion
+
+
+// El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio.
+// La forma de cobrar es la siguiente: si son 200 alumnos o más, el costo por cada alumno es de $20.00; de 100 a 199 alumnos, el costo es de $30.00, de 50 a 99, de $40.00,
+// y si son menos de 50, el costo de la renta del autobús es de $50 y si son menos de 20 el costo es $2000, sin importar el número de alumnos.
+// Realice un algoritmo que permita determinar el pago a la compañía de autobuses y lo que debe pagar cada alumno por el viaje considerando un descuento del 10% adicional
+
+// Entrada
+//  declarar e iniciar
+//    - numeroAlumnos: Cantidad de alumnos que van al viaje
+//    - costoPorAlumno: Costo por alumno según el número de alumnos
+//    - costoTotal: Costo total a pagar a la compañía
+//    - descuento: Monto del descuento aplicado (10%)
+//    - totalConDescuento: Costo total después del descuento
+//  Solicitar al usuario que ingrese el número de alumnos
+
+// Proceso
+//  Determinar costoTotal según el número de alumnos:
+//    - Si < 20 entonces costoTotal = 2000
+//    - Si entre 20 y 49 entonces costoTotal = 50
+//    - Si entre 50 y 99 entonces costoPorAlumno = 40
+//    - Si entre 100 y 199 entonces costoPorAlumno = 30
+//    - Si >= 200 entonces costoPorAlumno = 20
+//  Calcular costoTotal = costoPorAlumno * numeroAlumnos
+//  Calcular descuento = costoTotal * 0.10
+//  Calcular totalConDescuento = costoTotal - descuento
+
+// Salida
+//  Mostrar el costo por alumno, total a pagar y total con descuento
+
+Funcion  Calcular_Costo_Viaje
+    Definir numeroAlumnos Como Entero
+    Definir costoPorAlumno, costoTotal, descuento, totalConDescuento Como Real
+	
+    // Entrada
+    Escribir "Ingresa el número de alumnos:"
+    Leer numeroAlumnos
+	
+    // Proceso: Determinar costo por alumno y total a pagar
+    Si numeroAlumnos < 20 Entonces
+        costoTotal = 2000
+        costoPorAlumno = costoTotal / numeroAlumnos  // Este costo es para reflejar el pago por alumno
+    Sino
+        Si numeroAlumnos < 50 Entonces
+            costoTotal = 50
+            costoPorAlumno = costoTotal / numeroAlumnos
+        Sino
+            Si numeroAlumnos >= 200 Entonces
+                costoPorAlumno = 20
+            Sino
+                Si numeroAlumnos >= 100 Entonces
+                    costoPorAlumno = 30
+                Sino
+                    costoPorAlumno = 40
+                FinSi
+            FinSi
+        FinSi
+        
+        // Calcular costo total
+        costoTotal = costoPorAlumno * numeroAlumnos
+    FinSi
+	
+    // Calcular descuento (10%)
+    descuento = costoTotal * 0.10
+    totalConDescuento = costoTotal - descuento
+	
+    // Salida
+    Escribir "El costo por alumno es: $", costoPorAlumno
+    Escribir "El total a pagar a la compañía de autobuses es: $", costoTotal
+    Escribir "El total después del descuento (10%) es: $", totalConDescuento
+FinFuncion
+
+
+
+Algoritmo deber
+	opc=""
+	Escribir "menu principal"
+	Escribir "1). num_mayor"
+	Escribir "2)calculando_edad"
+	Escribir "3)Multiplo_2"
+	Escribir "4)Positivo_negativo"
+	Escribir "5)Año_Bisiesto"
+	Escribir "6)Signo_zodiacal"
+	Escribir "7)Quincena"
+	Escribir "8)Dia_de_la_semana"
+	Escribir "9) Dia_de_la_semana "
+	Escribir "10)Calculadora_precio_descuesto"
+	Escribir "11)Calculadora_sueldo_Aumento"
+	Escribir "12) Calculadora_Compra"
+	Escribir "13)Calculadora_Impuestos_Sobre_Salario"
+	Escribir "14)Calcular_Bono_antiguedad"
+	Escribir "15) Calculando_Costo_envio"
+	Escribir "16)Calcular_compras_con_descuento_y_IVA"
+	escribir "17)Calcular_Costo_Con_Descuento_E_Impuesto"
+	Escribir "18)Calculando_costo_Servicio"
+	Escribir "19)Calculando_presupuesto_Banquete"
+	Escribir "20)CalcularGananciaUva"
+	Escribir "21)Calcular_Costo_Viaje"
+	Escribir "salir"
+	Escribir "     eliga opcion{1.....21}"
+	leer opc
+FinAlgoritmo
+
+
